@@ -1,0 +1,13 @@
+/* pages/Bullying/property/property.wxss */
+.property .item{
+  position: relative;
+  width:90%;
+  margin:auto;
+}
+.property .title{
+  position: absolute;
+  top:20rpx;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,59 @@
+{
+  "pages": [
+        "pages/home/home",
+    "pages/Bullying/property/property",
+
+    "pages/bottle/bottle",
+    "pages/bottledetailed/bottledetailed",
+    "pages/playing/playing",
+    "pages/ranking/ranking",
+    "pages/payMoney/payMoney",
+    "pages/thank/thank",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/activitydetailed/activitydetailed",
+    "pages/Wishing/Wishing",
+    "pages/mybottle/mybottle",
+    "pages/marquee/marquee",
+    "pages/activity/activity",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#e47739",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "/images/wyxy1_icon@2x.png",
+        "selectedIconPath": "/images/wyxy2_icon@2x.png",
+        "pagePath": "pages/home/home",
+        "text": "我要许愿"
+      },
+      {
+        "iconPath": "/images/pz1_icon@2x.png",
+        "selectedIconPath": "/images/pz2_icon@2x.png",
+        "pagePath": "pages/bottle/bottle",
+        "text": "瓶子"
+      },
+      {
+        "iconPath": "/images/hd1_icon@2x.png",
+        "selectedIconPath": "/images/hd2_icon@2x.png",
+        "pagePath": "pages/activity/activity",
+        "text": "活动"
+      },
+      {
+        "iconPath": "/images/wd1_icon@2x.png",
+        "selectedIconPath": "/images/wd2_icon@2x.png",
+        "pagePath": "pages/mybottle/mybottle",
+        "text": "我的瓶子"
+      }
+    ]
+  },
+  "debug": false
+}

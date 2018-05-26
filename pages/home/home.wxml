@@ -1,0 +1,22 @@
+<block>
+  <!-- Banner 开始 -->
+  <view class="swiper-container">
+    <swiper autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+      <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="https://xyxy.lchuyu.com/upload/{{item.cover_url}}" class="img"></image>
+          <navigator url="{{'../Wishing/Wishing?bottle_id='+item.bottle_id}}">
+          <image data-bottle_id = '{{item.bottle_id}}' src='/images/58271524375014_.pic.jpg' id='banner_btn'  bindtap='changewish'></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="dots">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+</block>

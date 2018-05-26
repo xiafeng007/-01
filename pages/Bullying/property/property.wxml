@@ -1,0 +1,10 @@
+<view class='property'>
+  <view class='item'>
+    <image src='/images/1@2x.png' class='bg'></image>
+    <text class='title'>瓶子信息</text>
+    <view class='con'>
+        <text class='t1'>马云：</text>
+        <text class='t2'>求保佑，求守护，只要让我考上了，一定杀鸡宰牛叩谢神恩 </text>
+    </view>
+  </view>
+</view>

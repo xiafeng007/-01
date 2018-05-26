@@ -1,0 +1,13 @@
+<view>
+  <image src='/images/dsbg_img@2x.png' class='playing-bg'></image>
+
+  <view class='con'>
+    <view class="section">
+        <input placeholder="输入金额" auto-focus/>
+    </view>
+    <image src='/images/ds_button@2x.png' class='btn'></image>
+    <text>
+      你的打赏将会进入幸运星开发团队的账号，感谢你对我们的支持，祝你生活愉快！
+    </text>
+  </view>
+</view>   

@@ -1,0 +1,78 @@
+<!-- <import src="../marquee/marquee.wxml"/>
+<template is="listTemp"></template> -->
+<!--走马灯  -->
+<view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text">
+      <view class="marquee">
+        <view class="content">
+          <text>{{text}}</text>
+          <text style="display: inline-block; width: 5em;"></text>
+          <text>{{text}}</text>
+          <text style="display: inline-block; width: 5em;"></text>
+          <text>{{text}}</text>
+          <text style="display: inline-block; width: 5em;"></text>
+        </view>
+      </view>
+    </view>
+    <view class='suona'>
+      <image src='/images/voice_icon@2x.png'></image>
+    </view>
+  </view>
+</view>
+
+<view class='section'>
+  <view class='list-content' wx:for="{{dataInfo}}" wx:key="item">
+    <view class='container'>
+      <view class='pic'>
+        <image src='/images/xyp_img@2x.png'></image>
+        <text>运财瓶</text>
+      </view>
+      <view class='txt'>
+        <text class='t1'>{{item.name}}:</text>
+        <text class='t2'>{{item.info}}</text>
+        <view class='bot'>
+          <view class='btn'>
+            <text class='btn1'>我要霸屏</text>
+            <text class='btn2'>打赏</text>
+          </view>
+          <view class='t3'>
+            <image src='/images/star1_icon@2x.png' class='zan'></image>
+            <text class='red'>132</text>
+            <text class='gray'>人赠他星星</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <text class='strat'>已霸屏：</text>
+    <view class='bottom'>
+      <view class='bottom-list'>
+        <text>2018-07-12 14:00 </text>
+        <text>省内霸屏</text>
+        <text>准备中…</text>
+        <text class="btn {{ item.flag? 'active' : '' }}" data-idx="{{ index }}" bindtap="expandDetail">{{item.flag?'隐藏':'展开'}}<i></i></text>
+        <rich-text class="arrow {{ item.flag? 'active' : '' }}" data-idx="{{ index }}" bindtap="expandDetail"></rich-text>
+      </view>
+    </view>
+    <!-- 展开  -->
+    <view class="show-content" wx:if="{{ item.flag }}">
+      <view class='show-con'>
+        <view class='item'>
+          <text>{{item.time}}</text>
+          <text>省内霸屏</text>
+          <text>准备中…</text>
+        </view>
+      </view>
+
+      <text class='play'>已打赏：</text>
+      <view class='show-con'>
+        <view class='item'>
+          <text>{{item.time}} </text>
+          <text>打赏</text>
+          <span>1.00元</span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

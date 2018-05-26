@@ -1,0 +1,36 @@
+.payMoney-bg{
+  min-height: 100vh;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1; 
+}
+.btn{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  bottom:120rpx;
+}
+.btn image{
+  height: 95rpx;
+  width:520rpx;
+}
+.money{
+  position: absolute;
+  top:440rpx;
+  font-size: 50rpx;
+  color:#EC4D35;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.txt{
+  width:520rpx;
+  font-size:30rpx;
+}
+.txt .t2{
+  float: right;
+}

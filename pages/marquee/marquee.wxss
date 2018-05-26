@@ -1,0 +1,35 @@
+.example {
+  display: block;
+  height: 80rpx;
+  background: #f1e3c0;
+  line-height: 80rpx;
+  padding:5rpx 0;
+}
+
+.marquee_box {
+  width: 100%;
+  position: relative;
+  border:1px dashed #c8a46d;
+  color:#5c3f21;
+  height:75rpx;
+}
+.marquee_box .suona{
+  position: absolute;
+  top:0rpx;
+  left:-5rpx;
+  width:100rpx;
+  height:75rpx;
+  background: #f1e3c0;
+  z-index: 99;
+}
+.marquee_box .suona image{
+  width:60rpx;
+  height: 60rpx;
+  margin:10rpx 0 0 20rpx;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}

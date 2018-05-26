@@ -1,0 +1,14 @@
+<view class="activity">
+  <view class='activity-list' wx:for="{{Activity}}" wx:key="item">
+    <image src='{{item.url}}' class='pic'></image>
+    <rich-text bindtap="tap">{{item.status}}</rich-text> 
+    <view class='info'>
+      <navigator url="{{'../activitydetailed/activitydetailed?id='+item.id}}">
+        <text>{{item.name}}</text>
+        <text>{{item.start_time}}－{{item.over_time}}
+        </text>
+      </navigator>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,67 @@
+<!--pages/activitydetailed/activitydetailed.wxml-->
+<view class='topImg'>
+  <image src='/images/hdxq5@2x.png' ></image>
+  <text>{{detailed.bottle_name}}</text>
+</view>
+
+<view class='con'>
+  <text class='fl'>{{detailed.status}}</text>
+  <text class='fr btn' data-id='{{detailed.id}}' bindtap='onlock'>查看活动排名</text>
+</view>
+
+<view class='txt'>
+  <text class='t1'>活动说明</text>
+  <text class='t2'>
+    6月1日起，至6月7日为止，凡使用学业瓶许下心愿的用户都有机会获得R&B笔记本电脑。
+  </text>
+</view>
+
+<view class='txt'>
+  <text class='t1'>活动时间</text>
+  <text class='t2'>
+    {{detailed.start_time}}-{{detailed.over_time}}
+  </text>
+</view>
+
+
+<view class='txt'>
+  <text class='t1'>参赛要求</text>
+  <text class='t2'>
+    使用{{detailed.bottle_name}}许下心愿
+  </text>
+</view>
+
+<view class='txt'>
+  <text class='t1'>获奖规则</text>
+  <text class='t2'>
+    截至6月7日24时系统自动统计获得星星票数，获得最高票数的前10位用户均可获得奖励
+  </text>
+</view>
+
+<view class="table">  
+  <view class="tr bg-w">  
+    <view class="th">排名</view>  
+    <view class="th-2">奖品</view>  
+  </view>
+
+  <!-- <view>{{detailed.content}}</view> -->
+
+  <block wx:for="{{listData}}" wx:key="{{code}}">  
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">  
+      <view class="td-1" selectable="true">{{item.code}}</view>  
+      <view class="td-2" selectable="true" scroll-y="true" >  
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>  
+      </view>  
+      <!--view class="td">{{item.type}}</view-->  
+    </view>  
+    <view class="tr bg-g2" wx:else>  
+      <view class="td-1" selectable="true">{{item.code}}</view>  
+      <view class="td-2" selectable="true"  scroll-y="true" >  
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.text}}</text>  
+     </view>  
+    </view>  
+  </block>  
+</view>  
+
+
+

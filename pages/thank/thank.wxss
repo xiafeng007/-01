@@ -1,0 +1,21 @@
+.pic{
+  width:360rpx;
+  height: 320rpx;
+  display: block;
+  margin:160rpx auto 60rpx;
+}
+.btn{
+  width:320rpx;
+  height:90rpx;
+  display: block;
+  margin:80rpx auto;
+}
+.section text{
+  display: block;
+  font-size:35rpx;
+  text-align: center;
+  margin-top:20rpx;
+}
+.section .text2{
+  color:#999999;
+}

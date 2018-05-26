@@ -1,0 +1,7 @@
+<view class='section'>
+  <image src='/images/thanks_img@2x.png' class='pic'></image>
+  <text>感谢你的肯定和参与</text>
+  <text class='text2'>你的支持是我们最大的动力</text>
+
+  <image src='/images/qd_button@2x.png' class='btn'></image>
+</view>

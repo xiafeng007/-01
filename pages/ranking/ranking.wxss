@@ -1,0 +1,27 @@
+/* pages/ranking/ranking.wxss */
+.zan{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+  margin-right:20rpx;
+}
+.ranking{
+  display: flex;
+	justify-content:space-between;
+  align-items:center;
+  padding:30rpx 60rpx;
+  border-bottom:1px solid #F2F2F2;
+  padding-bottom:20rpx;
+  margin-bottom:30rpx;
+  line-height: 30rpx;
+}
+.ranking .item{
+  font-size:30rpx;
+}
+.ranking .t1{
+  color:#787878;
+  margin-right:20rpx;
+}
+.ranking .t2{
+  color:#E93B75;
+}

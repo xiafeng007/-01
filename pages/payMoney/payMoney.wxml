@@ -1,0 +1,14 @@
+<view>
+  <image src='/images/qrfkbg_img@2x.png' class='payMoney-bg'></image>
+  <view class='money'>
+    <text>8.88</text>
+  </view>
+  <view class='btn'>
+    <image src='/images/zf_button@2x.png' bindtap='onpayment'></image>
+    <view class='txt'>
+      <text>打赏费</text>
+      <text class='t2'>¥8.88</text>
+    </view>
+  </view>
+  
+</view>

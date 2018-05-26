@@ -1,0 +1,26 @@
+<view class='bottledetailed'>
+  <image src='/images/pzxq_img.jpg' class='bottledetailed-bg'></image>
+  <text class='title'>{{detailed.bottle_name}}</text>
+</view>
+<view class='con'>
+  <text class='t1'>{{detailed.content}}</text>
+  <image src='/images/star.1_icon@2x.png' class='icon'></image>
+  <view class='zan'>
+    <text class='red'>{{detailed.num}}</text>
+    <text class='t2'>人赠她星星</text>
+  </view>
+
+  <view>
+    <!-- <image src='/images/share1_button@2x.png' class='btn' ></image>
+    <image src='/images/share2_button@2x.png' class='btn'></image> -->
+    <navigator class='wyxy_button' url="{{'../payMoney/payMoney?id='+detailed.id}}">
+      <image src="/images/wyxy_button@2x.png"></image>
+    </navigator>
+    <button class='share' open-type="share">
+      <image src='/images/share1_button@2x.png' class='btn'></image>
+    </button>
+    <button class='share' open-type="share">
+      <image src='/images/share2_button@2x.png' class='btn'></image>
+    </button>
+  </view>
+</view>

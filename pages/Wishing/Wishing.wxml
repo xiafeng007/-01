@@ -1,0 +1,48 @@
+<view class="top">
+  <image src='/images/bg_img@2x.png'></image>
+  <view class='info'>
+    <text class='t1'>学业瓶</text>
+    <text class='t2'>- 学业上进·金榜题名 -</text>
+  </view>
+</view>
+
+<view class='form'>
+  <text class='form-title'>填写信息</text>
+  <form bindsubmit="fb">
+    <view class="section">
+      <view class="section__title">姓名：</view>
+      <input placeholder="请输入姓名" name="name" value='{{name}}' class='input-txt' />
+    </view>
+
+    <view class="section">
+      <view class="section__title">性别：</view>
+      <!-- <input placeholder="请选择性别" class='input-txt' /> -->
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio name="sex" value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+      <picker mode="date" bindchange="bindDateChange" placeholder="请输入生日" name="birth" value="{            {birth}}" class='input-picker'>
+        <view class="picker">
+          生日: {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <view class="section__title">手机：</view>
+      <input placeholder="请输入手机号" name="mobile" value="{{mobile}}" class='input-txt' />
+    </view>
+
+    <view class="section">
+      <view class="section__title">愿望：</view>
+      <textarea placeholder="请输入心中的愿望。（50字内）" name="content" value="{{content}}" class='textarea-txt'></textarea>
+    </view>
+    <button class='bbtn' form-type="submit">
+      <image src='/images/start_button@2x.png'></image>
+    </button>
+  </form>
+</view>
